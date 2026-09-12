@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
-
     "setup": "tsx scripts/setupDatabase.ts",
     "setup-r2-test": "tsx scripts/setup-round2-test-db.ts",
     "setup-r2-semis": "tsx scripts/setup-round2-test-db.ts manmaychakarborty@gmail.com B",
@@ -20,7 +19,7 @@
     "add-teams": "tsx scripts/add-teams.ts",
     "copy-db": "tsx scripts/copy-db.ts",
     "initialize-tournament-multi": "ts-node scripts/initialize-tournament-multi.ts",
-    "start-round-multi": "ts-node scripts/start-round-multi.ts",
+    "start-round-multi": "node init && ts-node scripts/start-round-multi.ts",
     "advance-round-multi": "ts-node scripts/advance-round-multi.ts",
     "status-tournament": "ts-node scripts/status-tournament.ts",
     "fix-match-handles": "ts-node scripts/fix-match-handles.ts"
